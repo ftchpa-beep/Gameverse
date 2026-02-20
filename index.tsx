@@ -1,100 +1,84 @@
 import React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-import HomeScreen from './screens/HomeScreen';
-import EarnScreen from './screens/EarnScreen';
-import InventoryScreen from './screens/InventoryScreen';
-import MarketplaceScreen from './screens/MarketplaceScreen';
-import LeaderboardScreen from './screens/LeaderboardScreen';
 
-const Stack = createStackNavigator();
-
-const App = () => {
-  return (
-    <NavigationContainer>
-      <Stack.Navigator initialRouteName="Home">
-        <Stack.Screen name="Home" component={HomeScreen} />
-        <Stack.Screen name="Earn" component={EarnScreen} />
-        <Stack.Screen name="Inventory" component={InventoryScreen} />
-        <Stack.Screen name="Marketplace" component={MarketplaceScreen} />
-        <Stack.Screen name="Leaderboard" component={LeaderboardScreen} />
-      </Stack.Navigator>
-    </NavigationContainer>
-  );
+// 1. Adopt Me - Pet System
+const AdoptMe = () => {
+    // Game logic for pets
 };
 
-export default App;
-
-// HomeScreen.tsx
-import React from 'react';
-import { View, Text, Button } from 'react-native';
-
-const HomeScreen = ({ navigation }) => {
-  return (
-    <View>
-      <Text>Welcome to Gameverse!</Text>
-      <Button title="Earn Money" onPress={() => navigation.navigate('Earn')} />
-      <Button title="Inventory" onPress={() => navigation.navigate('Inventory')} />
-      <Button title="Marketplace" onPress={() => navigation.navigate('Marketplace')} />
-      <Button title="Leaderboard" onPress={() => navigation.navigate('Leaderboard')} />
-    </View>
-  );
+// 2. Bloxburg - Building/Jobs
+const Bloxburg = () => {
+    // Game logic for building and jobs
 };
 
-export default HomeScreen;
-
-// EarnScreen.tsx
-import React from 'react';
-import { View, Text } from 'react-native';
-
-const EarnScreen = () => {
-  return (
-    <View>
-      <Text>Earn Money Screen!</Text>
-    </View>
-  );
+// 3. Brookhaven - Property Management
+const Brookhaven = () => {
+    // Game logic for managing properties
 };
 
-export default EarnScreen;
-
-// InventoryScreen.tsx
-import React from 'react';
-import { View, Text } from 'react-native';
-
-const InventoryScreen = () => {
-  return (
-    <View>
-      <Text>Inventory Screen!</Text>
-    </View>
-  );
+// 4. Murder Mystery - Gameplay
+const MurderMystery = () => {
+    // Game logic for murder mystery gameplay
 };
 
-export default InventoryScreen;
-
-// MarketplaceScreen.tsx
-import React from 'react';
-import { View, Text } from 'react-native';
-
-const MarketplaceScreen = () => {
-  return (
-    <View>
-      <Text>Marketplace Screen!</Text>
-    </View>
-  );
+// 5. Jailbreak - Heist System
+const Jailbreak = () => {
+    // Game logic for heists
 };
 
-export default MarketplaceScreen;
-
-// LeaderboardScreen.tsx
-import React from 'react';
-import { View, Text } from 'react-native';
-
-const LeaderboardScreen = () => {
-  return (
-    <View>
-      <Text>Leaderboard Screen!</Text>
-    </View>
-  );
+// 6. Obby - Obstacle Courses
+const Obby = () => {
+    // Game logic for obstacle courses
 };
 
-export default LeaderboardScreen;
+// 7. Simulator Games - Tree/Pet Simulator
+const SimulatorGames = () => {
+    // Game logic for simulators
+};
+
+// 8. Tycoon - Business Management
+const Tycoon = () => {
+    // Game logic for business tycoons
+};
+
+// 9. Parkour
+const Parkour = () => {
+    // Game logic for parkour challenges
+};
+
+// 10. Sword Fighting
+const SwordFighting = () => {
+    // Game logic for sword fighting matches
+};
+
+// 11. Arsenal - Combat Shooter
+const Arsenal = () => {
+    // Game logic for combat shooting
+};
+
+// 12. Royale - Battle Royale
+const Royale = () => {
+    // Game logic for battle royale
+};
+
+const Gameverse = () => {
+    return (
+        <div>
+            <h1>Welcome to Gameverse</h1>
+            {/* Game components can be rendered here based on user choice */}
+            <AdoptMe />
+            <Bloxburg />
+            <Brookhaven />
+            <MurderMystery />
+            <Jailbreak />
+            <Obby />
+            <SimulatorGames />
+            <Tycoon />
+            <Parkour />
+            <SwordFighting />
+            <Arsenal />
+            <Royale />
+        </div>
+    );
+};
+
+export default Gameverse;
